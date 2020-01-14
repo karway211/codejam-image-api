@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CodeJam - canvas</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__content">
+            <img class="header__content-nav" src="./assets/ShapeLeft.png" alt="button">
+            <h1 class="header__content-h1">CodeJam - Pallete</h1>
+            <img class="header__content-menu" src="./assets/ShapeRight.png" alt="button">
+        </div>
+    </header>
+    <main class="main">
+        <div class="instruments-wrapper">
+            <section class="instruments-section">
+                <div id="paintBucket" class="instruments__element">
+                    <img src="./assets/PaintBucket.png" alt="Paint bucket" class="instruments-image">
+                    <span class="instruments-name">Paint bucket</span>
+                </div>
+                <div id="choose" class="instruments__element">
+                    <img src="./assets/ChooseColor.png" alt="Choose color" class="instruments-image">
+                    <span class="instruments-name">Choose color</span>
+                </div>
+                <div id="pencil" class="instruments__element">
+                    <img src="./assets/pencil.png" alt="pencil" class="instruments-image">
+                    <span class="instruments-name">Pencil</span>
+                </div>
+                <hr>
+                <div class="instruments__element">
+                    <img src="./assets/Move.png" alt="Move" class="instruments-image">
+                    <span class="instruments-name">Move</span>
+                </div>
+                <div class="instruments__element">
+                    <img src="./assets/Transform.png" alt="Transform" class="instruments-image">
+                    <span class="instruments-name">Transform</span>
+                </div>
+            </section>
+            <section class="colors-section">
+                <div class="colors__element">
+                    <div id="prev" class="color-item prev"></div>
+                    <span class="colors-name">Prev color</span>
+                </div>
+                <div class="colors__element">
+                        <input type="color" id="Current" name="head" class="colors-input">
+                        <label for="Current">Current color</label>
+                </div>
+                <hr>
+                <div class="colors__element">
+                    <div id="red" class="color-item red"></div>
+                    <span class="colors-name">red</span>
+                </div>
+                <div class="colors__element">
+                    <div id="blue" class="color-item blue"></div>
+                    <span class="colors-name">blue</span>
+                </div>
+            </section>
+        </div>
+        <div class="wrapper-canvas">
+            <div class="wrapper-input">
+                <div class="wrapper-form">
+                    <input id="load" class="form-bth bth" type="button" value="load">
+                    <input id="city" class="form-input" type="text" value="Minsk">
+                </div>
+                <input id="B&W" class="bth" type="button" value="B&W">
+            </div>
+            
+            <canvas id="canvas" width="512" height="512"></canvas>
+        </div>
+        <section class="change">
+            <button id="bth-128" class="change-bth">128 x 128</button>
+            <button id="bth-256" class="change-bth">256 x 256</button>
+            <button id="bth-512" class="change-bth">512 x 512</button>
+        </section>
+    </main>
+    
+</body>
+</html>
